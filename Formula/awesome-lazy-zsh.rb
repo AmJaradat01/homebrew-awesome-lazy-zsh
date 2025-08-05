@@ -9,9 +9,6 @@ class AwesomeLazyZsh < Formula
   depends_on "git"
 
   def install
-    # Install the main script
-    bin.install "setup.sh" => "awesome-lazy-zsh"
-    
     # Install supporting files
     libexec.install Dir["*"]
     
