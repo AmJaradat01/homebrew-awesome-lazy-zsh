@@ -1,18 +1,47 @@
-# AmJaradat01 Awesome-lazy-zsh
+# Homebrew Tap for Awesome-Lazy-Zsh
 
-## How do I install these formulae?
+[![Homebrew](https://img.shields.io/badge/Homebrew-v3.1.2-blue.svg)](https://brew.sh)
 
-`brew install amjaradat01/awesome-lazy-zsh/<formula>`
+🚀 **The easiest way to install Awesome-Lazy-Zsh**
 
-Or `brew tap amjaradat01/awesome-lazy-zsh` and then `brew install <formula>`.
+## Installation
 
-Or, in a `brew bundle` `Brewfile`:
+```bash
+brew install amjaradat01/awesome-lazy-zsh/awesome-lazy-zsh
+```
+
+Or tap first:
+
+```bash
+brew tap amjaradat01/awesome-lazy-zsh
+brew install awesome-lazy-zsh
+```
+
+## Usage
+
+After installation, run:
+
+```bash
+awesome-lazy-zsh
+```
+
+## What's Included (v3.1.2)
+
+- 🗄️ **Database Services** - MongoDB, PostgreSQL, MySQL, Redis, RabbitMQ, Elasticsearch, Memcached
+- ☁️ **Cloud CLI Tools** - AWS, Google Cloud, Azure shortcuts
+- 🐳 **DevOps Tools** - Kubernetes, Docker Compose, Terraform, Ansible
+- 💻 **Language Support** - Python, Go, Rust, Node.js, Java
+- 🛠️ **Productivity** - Git extras, SSH manager, directory shortcuts, history search
+- 🌐 **Cross-Platform** - Full support for macOS, Linux, and Windows (WSL)
+
+## Brewfile
 
 ```ruby
 tap "amjaradat01/awesome-lazy-zsh"
-brew "<formula>"
+brew "awesome-lazy-zsh"
 ```
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+- [Awesome-Lazy-Zsh Repository](https://github.com/AmJaradat01/awesome-lazy-zsh)
+- [Homebrew Documentation](https://docs.brew.sh)
