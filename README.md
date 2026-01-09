@@ -1,6 +1,6 @@
 # Homebrew Tap for Awesome-Lazy-Zsh
 
-[![Homebrew](https://img.shields.io/badge/Homebrew-v3.1.3-blue.svg)](https://brew.sh)
+[![Homebrew](https://img.shields.io/badge/Homebrew-v3.1.4-blue.svg)](https://brew.sh)
 
 🚀 **The easiest way to install Awesome-Lazy-Zsh**
 
@@ -25,7 +25,7 @@ After installation, run:
 awesome-lazy-zsh
 ```
 
-## What's Included (v3.1.3)
+## What's Included (v3.1.4)
 
 - 🗄️ **Database Services** - MongoDB, PostgreSQL, MySQL, Redis, RabbitMQ, Elasticsearch, Memcached
 - ☁️ **Cloud CLI Tools** - AWS, Google Cloud, Azure shortcuts
