@@ -1,8 +1,8 @@
 # Homebrew Tap for Awesome-Lazy-Zsh
 
-[![Homebrew](https://img.shields.io/badge/Homebrew-v3.1.4-blue.svg)](https://brew.sh)
+[![Homebrew](https://img.shields.io/badge/Homebrew-v3.3.0-blue.svg)](https://brew.sh)
 
-🚀 **The easiest way to install Awesome-Lazy-Zsh**
+The easiest way to install Awesome-Lazy-Zsh.
 
 ## Installation
 
@@ -25,14 +25,17 @@ After installation, run:
 awesome-lazy-zsh
 ```
 
-## What's Included (v3.1.4)
+## What's Included (v3.3.0)
 
-- 🗄️ **Database Services** - MongoDB, PostgreSQL, MySQL, Redis, RabbitMQ, Elasticsearch, Memcached
-- ☁️ **Cloud CLI Tools** - AWS, Google Cloud, Azure shortcuts
-- 🐳 **DevOps Tools** - Kubernetes, Docker Compose, Terraform, Ansible
-- 💻 **Language Support** - Python, Go, Rust, Node.js, Java
-- 🛠️ **Productivity** - Git extras, SSH manager, directory shortcuts, history search
-- 🌐 **Cross-Platform** - Full support for macOS, Linux, and Windows (WSL)
+- Resume Setup — checkpoint-based state persistence, never lose progress
+- Service Installation — MongoDB, PostgreSQL, MySQL, Redis, RabbitMQ, Elasticsearch, Memcached
+- Cloud CLI Tools — AWS CLI, Google Cloud SDK, Azure CLI
+- DevOps Tools — kubectl, Terraform, Ansible, Docker Compose
+- Language Runtimes — Python, Go, Rust, Java/OpenJDK
+- 42 Plugins — databases, cloud, DevOps, languages, productivity shortcuts
+- 5 Themes — Spaceship, Powerlevel10k, Starship, Agnoster, Robbyrussell
+- Profiles — save and switch between configurations
+- Cross-Platform — macOS, Linux, and Windows (WSL2)
 
 ## Brewfile
 
