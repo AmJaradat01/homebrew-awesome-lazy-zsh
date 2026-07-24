@@ -12,7 +12,6 @@ curl -sL https://github.com/AmJaradat01/awesome-lazy-zsh/archive/refs/tags/vX.X.
 2. Update `Formula/awesome-lazy-zsh.rb`:
    - Update `url` with new tag
    - Update `sha256` with new hash
-   - Update `version`
 
 3. Test locally:
 ```bash
