@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/AmJaradat01/homebrew-awesome-lazy-zsh/security/advisories/new
+    about: Report vulnerabilities privately
+  - name: Awesome Lazy Zsh application issues
+    url: https://github.com/AmJaradat01/awesome-lazy-zsh/issues/new
+    about: Report product behavior that is not specific to the Homebrew formula
