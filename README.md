@@ -1,6 +1,6 @@
 # Homebrew Tap for Awesome-Lazy-Zsh
 
-[![Homebrew](https://img.shields.io/badge/Homebrew-tap-FBB040.svg?logo=homebrew)](https://brew.sh) [![Formula Version](https://img.shields.io/badge/formula-v3.4.4-blue.svg)](https://github.com/AmJaradat01/awesome-lazy-zsh/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Homebrew](https://img.shields.io/badge/Homebrew-tap-FBB040.svg?logo=homebrew)](https://brew.sh) [![Formula Version](https://img.shields.io/badge/formula-v3.4.5-blue.svg)](https://github.com/AmJaradat01/awesome-lazy-zsh/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Official Homebrew tap for [Awesome-Lazy-Zsh](https://github.com/AmJaradat01/awesome-lazy-zsh) — the easiest way to set up and manage your Zsh environment.
 
@@ -30,7 +30,7 @@ brew update && brew upgrade awesome-lazy-zsh
 
 ## What's Included
 
-### v3.4.4 (Latest)
+### v3.4.5 (Latest)
 - **Security Hardening** — managed-block `.zshrc` approach, atomic writes, pinned dependencies
 - **Update Notification** — automatic version checks with interactive update prompt
 - **Resume Setup** — checkpoint-based state persistence, never lose progress
@@ -48,7 +48,7 @@ brew update && brew upgrade awesome-lazy-zsh
 | Property | Value |
 |----------|-------|
 | **Name** | `awesome-lazy-zsh` |
-| **Version** | 3.4.4 |
+| **Version** | 3.4.5 |
 | **License** | MIT |
 | **Dependencies** | `git`, `node` |
 | **Homepage** | [github.com/AmJaradat01/awesome-lazy-zsh](https://github.com/AmJaradat01/awesome-lazy-zsh) |

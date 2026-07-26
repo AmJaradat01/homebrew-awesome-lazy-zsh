@@ -34,7 +34,27 @@ jobs:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULL_REQUEST: ${{ inputs.pull_request }}
         run: brew pr-pull --debug --tap="$GITHUB_REPOSITORY" "$PULL_REQUEST"
-      - name: Push bottle commit
-        uses: Homebrew/actions/git-try-push@f78b97900ce6c3c9c4e99de00a999e5541eeaabb
-        with:
-          branch: main
+      - name: Open protected bottle pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PULL_REQUEST: ${{ inputs.pull_request }}
+        run: |
+          set -euo pipefail
+
+          tap="${GITHUB_REPOSITORY/homebrew-/}"
+          tap_path="$(brew --repository "$tap")"
+          cd "$tap_path"
+
+          branch="automation/bottles-pr-${PULL_REQUEST}-${GITHUB_RUN_ID}"
+          git switch -c "$branch"
+          git push --set-upstream origin "$branch"
+
+          gh pr create \
+            --repo "$GITHUB_REPOSITORY" \
+            --base main \
+            --head "$branch" \
+            --title "chore: publish bottles from #${PULL_REQUEST}" \
+            --body "Publishes bottles built and tested by #${PULL_REQUEST}. Required tap tests and CodeQL are dispatched for this protected-branch PR."
+
+          gh workflow run tests.yml --repo "$GITHUB_REPOSITORY" --ref "$branch"
+          gh workflow run codeql.yml --repo "$GITHUB_REPOSITORY" --ref "$branch"
