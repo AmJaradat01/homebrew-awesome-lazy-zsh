@@ -15,7 +15,7 @@ class AwesomeLazyZsh < Formula
     libexec.install Dir["*"]
 
     cd libexec do
-      system "npm", "install", *std_npm_args, "--ignore-scripts"
+      system "npm", "install", "--production", "--ignore-scripts"
     end
 
     (bin/"awesome-lazy-zsh").write <<~EOS
