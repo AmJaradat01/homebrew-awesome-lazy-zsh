@@ -1,8 +1,8 @@
 class AwesomeLazyZsh < Formula
   desc "Comprehensive Zsh environment manager with 40+ plugins, themes, and profiles"
   homepage "https://github.com/AmJaradat01/awesome-lazy-zsh"
-  url "https://github.com/AmJaradat01/awesome-lazy-zsh/archive/refs/tags/v3.5.0.tar.gz"
-  sha256 "bca52134d683d438cb5ac9bd5ab0ec78ad2a5f80c14b05b4d268340f313c1813"
+  url "https://github.com/AmJaradat01/awesome-lazy-zsh/archive/refs/tags/v3.5.1.tar.gz"
+  sha256 "b040a91145c04eed32697bef19f8ddb4878a682e1b1c23d29e7008427d66d6b2"
   license "MIT"
 
   depends_on "fzf"
@@ -15,16 +15,16 @@ class AwesomeLazyZsh < Formula
     libexec.install Dir["*"]
 
     cd libexec do
-      system "npm", "install", "--production", "--ignore-scripts"
+      system "npm", "install", *std_npm_args(prefix: false)
     end
 
     (bin/"awesome-lazy-zsh").write <<~EOS
       #!/bin/bash
       set -euo pipefail
       if [[ "${1:-}" == "--version" ]]; then
-        exec "#{formula_opt_bin("node")}/node" -p "require('#{libexec}/package.json').version"
+        exec "#{Formula["node"].opt_bin}/node" -p "require('#{libexec}/package.json').version"
       fi
-      exec "#{formula_opt_bin("node")}/node" "#{libexec}/src/index.js" "$@"
+      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/src/index.js" "$@"
     EOS
   end
 
