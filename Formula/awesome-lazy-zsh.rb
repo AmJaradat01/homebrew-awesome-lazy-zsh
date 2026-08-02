@@ -22,9 +22,9 @@ class AwesomeLazyZsh < Formula
       #!/bin/bash
       set -euo pipefail
       if [[ "${1:-}" == "--version" ]]; then
-        exec "#{Formula["node"].opt_bin}/node" -p "require('#{libexec}/package.json').version"
+        exec "#{formula_opt_bin("node")}/node" -p "require('#{libexec}/package.json').version"
       fi
-      exec "#{Formula["node"].opt_bin}/node" "#{libexec}/src/index.js" "$@"
+      exec "#{formula_opt_bin("node")}/node" "#{libexec}/src/index.js" "$@"
     EOS
   end
 
