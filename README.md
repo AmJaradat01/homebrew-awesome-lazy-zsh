@@ -1,6 +1,6 @@
 # Homebrew Tap for Awesome-Lazy-Zsh
 
-[![Homebrew](https://img.shields.io/badge/Homebrew-tap-FBB040.svg?logo=homebrew)](https://brew.sh) [![Formula Version](https://img.shields.io/badge/formula-v3.4.5-blue.svg)](https://github.com/AmJaradat01/awesome-lazy-zsh/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Homebrew](https://img.shields.io/badge/Homebrew-tap-FBB040.svg?logo=homebrew)](https://brew.sh) [![Formula Version](https://img.shields.io/badge/formula-v3.5.3-blue.svg)](https://github.com/AmJaradat01/awesome-lazy-zsh/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Official Homebrew tap for [Awesome-Lazy-Zsh](https://github.com/AmJaradat01/awesome-lazy-zsh) — the easiest way to set up and manage your Zsh environment.
 
@@ -25,20 +25,26 @@ awesome-lazy-zsh
 ## Update
 
 ```bash
+# Update via Homebrew
 brew update && brew upgrade awesome-lazy-zsh
+
+# Or use the built-in update command
+awesome-lazy-zsh update
 ```
 
 ## What's Included
 
-### v3.4.5 (Latest)
-- **Security Hardening** — managed-block `.zshrc` approach, atomic writes, pinned dependencies
-- **Update Notification** — automatic version checks with interactive update prompt
-- **Resume Setup** — checkpoint-based state persistence, never lose progress
+### v3.5.3 (Latest)
+- **Explicit Update Command** — run `awesome-lazy-zsh update` to check and install updates
+- **Non-blocking Notifications** — update availability shown without interrupting workflow
+- **Homebrew Upgrade Verification** — ensures brew upgrade actually installed the expected version
+- **Smart .zshrc Parser** — section detection, duplicate removal, syntax validation
+- **Incremental Updates** — add/remove plugins, change themes without full reinstall
 - **Service Installation** — MongoDB, PostgreSQL, MySQL, Redis, RabbitMQ, Elasticsearch, Memcached
 - **Cloud CLI Tools** — AWS CLI, Google Cloud SDK, Azure CLI
 - **DevOps Tools** — kubectl, Terraform, Ansible, Docker Compose
 - **Language Runtimes** — Python, Go, Rust, Java/OpenJDK
-- **42 Plugins** — databases, cloud, DevOps, languages, productivity shortcuts
+- **42+ Plugins** — databases, cloud, DevOps, languages, productivity shortcuts
 - **5 Themes** — Spaceship, Powerlevel10k, Starship, Agnoster, Robbyrussell
 - **Profiles** — save and switch between configurations
 - **Cross-Platform** — macOS (Intel & Apple Silicon), Linux, and Windows (WSL2)
@@ -48,10 +54,35 @@ brew update && brew upgrade awesome-lazy-zsh
 | Property | Value |
 |----------|-------|
 | **Name** | `awesome-lazy-zsh` |
-| **Version** | 3.4.5 |
+| **Version** | 3.5.3 |
 | **License** | MIT |
-| **Dependencies** | `git`, `node` |
+| **Dependencies** | `fzf`, `git`, `node`, `starship`, `zsh` |
 | **Homepage** | [github.com/AmJaradat01/awesome-lazy-zsh](https://github.com/AmJaradat01/awesome-lazy-zsh) |
+
+## CLI Usage
+
+```bash
+# Interactive setup
+awesome-lazy-zsh
+
+# Check for and install updates
+awesome-lazy-zsh update
+
+# Quick configuration
+awesome-lazy-zsh --add-plugin zsh-autosuggestions
+awesome-lazy-zsh --remove-plugin example-plugin
+awesome-lazy-zsh --set-theme powerlevel10k
+
+# Maintenance
+awesome-lazy-zsh --analyze
+awesome-lazy-zsh --repair
+awesome-lazy-zsh --clean-duplicates
+
+# Info
+awesome-lazy-zsh --version
+awesome-lazy-zsh --help
+awesome-lazy-zsh --doctor
+```
 
 ## Brewfile
 
@@ -96,6 +127,7 @@ brew install awesome-lazy-zsh
 ```bash
 brew info awesome-lazy-zsh
 which awesome-lazy-zsh
+awesome-lazy-zsh --doctor
 ```
 
 ## Links
