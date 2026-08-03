@@ -1,6 +1,6 @@
 # Homebrew Tap for Awesome-Lazy-Zsh
 
-[![Homebrew](https://img.shields.io/badge/Homebrew-tap-FBB040.svg?logo=homebrew)](https://brew.sh) [![Formula Version](https://img.shields.io/badge/formula-v3.6.0-blue.svg)](https://github.com/AmJaradat01/awesome-lazy-zsh/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Homebrew](https://img.shields.io/badge/Homebrew-tap-FBB040.svg?logo=homebrew)](https://brew.sh) [![Formula Version](https://img.shields.io/badge/formula-v3.6.1-blue.svg)](https://github.com/AmJaradat01/awesome-lazy-zsh/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Official Homebrew tap for [Awesome-Lazy-Zsh](https://github.com/AmJaradat01/awesome-lazy-zsh) — the easiest way to set up and manage your Zsh environment.
 
@@ -34,7 +34,8 @@ awesome-lazy-zsh update
 
 ## What's Included
 
-### v3.6.0 (Latest)
+### v3.6.1 (Latest)
+- **Fix: Homebrew trust for third-party taps** — MongoDB and other non-official tap packages now install correctly
 - **Mobile Development Plugins** — Flutter, React Native, Fastlane, Firebase (400+ aliases)
 - **Explicit Update Command** — run `awesome-lazy-zsh update` to check and install updates
 - **Non-blocking Notifications** — update availability shown without interrupting workflow
@@ -55,7 +56,7 @@ awesome-lazy-zsh update
 | Property | Value |
 |----------|-------|
 | **Name** | `awesome-lazy-zsh` |
-| **Version** | 3.6.0 |
+| **Version** | 3.6.1 |
 | **License** | MIT |
 | **Dependencies** | `fzf`, `git`, `node`, `starship`, `zsh` |
 | **Homepage** | [github.com/AmJaradat01/awesome-lazy-zsh](https://github.com/AmJaradat01/awesome-lazy-zsh) |
