@@ -1,6 +1,6 @@
 # Homebrew Tap for Awesome-Lazy-Zsh
 
-[![Homebrew](https://img.shields.io/badge/Homebrew-tap-FBB040.svg?logo=homebrew)](https://brew.sh) [![Formula Version](https://img.shields.io/badge/formula-v3.5.3-blue.svg)](https://github.com/AmJaradat01/awesome-lazy-zsh/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Homebrew](https://img.shields.io/badge/Homebrew-tap-FBB040.svg?logo=homebrew)](https://brew.sh) [![Formula Version](https://img.shields.io/badge/formula-v3.6.0-blue.svg)](https://github.com/AmJaradat01/awesome-lazy-zsh/releases/latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Official Homebrew tap for [Awesome-Lazy-Zsh](https://github.com/AmJaradat01/awesome-lazy-zsh) — the easiest way to set up and manage your Zsh environment.
 
@@ -34,7 +34,8 @@ awesome-lazy-zsh update
 
 ## What's Included
 
-### v3.5.3 (Latest)
+### v3.6.0 (Latest)
+- **Mobile Development Plugins** — Flutter, React Native, Fastlane, Firebase (400+ aliases)
 - **Explicit Update Command** — run `awesome-lazy-zsh update` to check and install updates
 - **Non-blocking Notifications** — update availability shown without interrupting workflow
 - **Homebrew Upgrade Verification** — ensures brew upgrade actually installed the expected version
@@ -44,7 +45,7 @@ awesome-lazy-zsh update
 - **Cloud CLI Tools** — AWS CLI, Google Cloud SDK, Azure CLI
 - **DevOps Tools** — kubectl, Terraform, Ansible, Docker Compose
 - **Language Runtimes** — Python, Go, Rust, Java/OpenJDK
-- **42+ Plugins** — databases, cloud, DevOps, languages, productivity shortcuts
+- **46+ Plugins** — databases, cloud, DevOps, languages, mobile, productivity shortcuts
 - **5 Themes** — Spaceship, Powerlevel10k, Starship, Agnoster, Robbyrussell
 - **Profiles** — save and switch between configurations
 - **Cross-Platform** — macOS (Intel & Apple Silicon), Linux, and Windows (WSL2)
@@ -54,7 +55,7 @@ awesome-lazy-zsh update
 | Property | Value |
 |----------|-------|
 | **Name** | `awesome-lazy-zsh` |
-| **Version** | 3.5.3 |
+| **Version** | 3.6.0 |
 | **License** | MIT |
 | **Dependencies** | `fzf`, `git`, `node`, `starship`, `zsh` |
 | **Homepage** | [github.com/AmJaradat01/awesome-lazy-zsh](https://github.com/AmJaradat01/awesome-lazy-zsh) |
