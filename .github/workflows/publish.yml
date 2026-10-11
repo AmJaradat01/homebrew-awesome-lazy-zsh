@@ -24,11 +24,11 @@ jobs:
     environment: release
     steps:
       - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@f78b97900ce6c3c9c4e99de00a999e5541eeaabb
+        uses: Homebrew/actions/setup-homebrew@eb02c69dbabdb66ff183c614f4ce7ab3c077592c
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Configure release identity
-        uses: Homebrew/actions/git-user-config@f78b97900ce6c3c9c4e99de00a999e5541eeaabb
+        uses: Homebrew/actions/git-user-config@eb02c69dbabdb66ff183c614f4ce7ab3c077592c
       - name: Pull tested bottles
         env:
           HOMEBREW_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
